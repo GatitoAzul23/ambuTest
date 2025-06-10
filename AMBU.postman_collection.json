@@ -1,0 +1,266 @@
+{
+	"info": {
+		"_postman_id": "7dec759c-10b9-4a73-b12b-1251d2791a21",
+		"name": "AMBU",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26250443"
+	},
+	"item": [
+		{
+			"name": "GET lista",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "AMBU-T-sb1mV21u9qhGkySo-50377249-5pLqkV",
+						"type": "text"
+					},
+					{
+						"key": "Ambu-Private-Key",
+						"value": "AMBU-3yFzfnT0hYNq8pq0zZMIH8WXGidZwWco4M5adoRD55GjuqAZ-riAfldmDWfJAoPtj-T",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://azuritaa28.sg-host.com/api/web/v1/parks",
+					"protocol": "https",
+					"host": [
+						"azuritaa28",
+						"sg-host",
+						"com"
+					],
+					"path": [
+						"api",
+						"web",
+						"v1",
+						"parks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET individual",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "AMBU-T-sb1mV21u9qhGkySo-50377249-5pLqkV",
+						"type": "text"
+					},
+					{
+						"key": "Ambu-Private-Key",
+						"value": "AMBU-3yFzfnT0hYNq8pq0zZMIH8WXGidZwWco4M5adoRD55GjuqAZ-riAfldmDWfJAoPtj-T",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://azuritaa28.sg-host.com/api/web/v1/parks/10",
+					"protocol": "https",
+					"host": [
+						"azuritaa28",
+						"sg-host",
+						"com"
+					],
+					"path": [
+						"api",
+						"web",
+						"v1",
+						"parks",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "AMBU-T-sb1mV21u9qhGkySo-50377249-5pLqkV",
+						"type": "text"
+					},
+					{
+						"key": "Ambu-Private-Key",
+						"value": "AMBU-3yFzfnT0hYNq8pq0zZMIH8WXGidZwWco4M5adoRD55GjuqAZ-riAfldmDWfJAoPtj-T",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"park_name\": \"Parque Cerro de la Reina\",\r\n    \"park_abbreviation\": \"PCR\",\r\n    \"park_img_url\": \"https://mapio.net/images-p/24809188.jpg\",\r\n    \"park_address\": \"Av. Cihualpilli S/N, Pachaguillo.\",\r\n    \"park_city\": \"Tonalá\",\r\n    \"park_state\": \"Jalisco\",\r\n    \"park_zip_code\": \"45400\",\r\n    \"park_latitude\": \"20.634154454586444\",\r\n    \"park_longitude\": \"-103.23870443595837\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://azuritaa28.sg-host.com/api/web/v1/parks",
+					"protocol": "https",
+					"host": [
+						"azuritaa28",
+						"sg-host",
+						"com"
+					],
+					"path": [
+						"api",
+						"web",
+						"v1",
+						"parks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "AMBU-T-sb1mV21u9qhGkySo-50377249-5pLqkV",
+						"type": "text"
+					},
+					{
+						"key": "Ambu-Private-Key",
+						"value": "AMBU-3yFzfnT0hYNq8pq0zZMIH8WXGidZwWco4M5adoRD55GjuqAZ-riAfldmDWfJAoPtj-T",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"park_name\": \"Parque de la Reina\",\r\n    \"park_abbreviation\": \"PDR\",\r\n    \"park_img_url\": \"https://mapio.net/images-p/24809188.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://azuritaa28.sg-host.com/api/web/v1/parks/24",
+					"protocol": "https",
+					"host": [
+						"azuritaa28",
+						"sg-host",
+						"com"
+					],
+					"path": [
+						"api",
+						"web",
+						"v1",
+						"parks",
+						"24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "AMBU-T-sb1mV21u9qhGkySo-50377249-5pLqkV",
+						"type": "text"
+					},
+					{
+						"key": "Ambu-Private-Key",
+						"value": "AMBU-3yFzfnT0hYNq8pq0zZMIH8WXGidZwWco4M5adoRD55GjuqAZ-riAfldmDWfJAoPtj-T",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://azuritaa28.sg-host.com/api/web/v1/parks/24",
+					"protocol": "https",
+					"host": [
+						"azuritaa28",
+						"sg-host",
+						"com"
+					],
+					"path": [
+						"api",
+						"web",
+						"v1",
+						"parks",
+						"24"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
