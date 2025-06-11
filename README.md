@@ -1,12 +1,24 @@
-# React + Vite
+# Ambu test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta aplicación creada con react consume una API REST y realiza las operaciones de un CRUD
 
-Currently, two official plugins are available:
+# Tecnologías
+-React
+-Vite
+-TailwindCSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Instalación
+Para clonar este repositorio crea una carpeta y en una terminal introduce lo siguiente
 
-## Expanding the ESLint configuration
+-https://github.com/GatitoAzul23/ambuTest.git
+-cd nombreDeProycto
+-npm install 
+-npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+con estos pasos se instalaran las dependencias pendientes y se compilara el proyecto
+
+# Variables de entorno
+Para el consumo de la API REST crea un arhcivo .env en la que declares las siguientes variables:
+-VITE_API_URL: que almacene la url base de la API 
+-VITE_AMBU_API_KEY= que almacene el header Authorization
+-VITE_AUTHORIZATION= que almacene el header de Ambu-Private-Key

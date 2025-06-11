@@ -29,8 +29,13 @@ function Detalle(){
         })
         .then(response =>  response.json())
         .then(data => {
-            console.log(data),
-        setParque(data.data)})
+            if (!data.data) {
+                alert('No se encontró el parque');
+                navigate('/');
+            } else {
+                setParque(data.data);
+            }
+        })
         .catch(error=> console.error(error))
     }, [id])
 

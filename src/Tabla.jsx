@@ -13,17 +13,17 @@ function Tabla({park}) { //recibimos el park como prop
 
     //Funcion para ver los detalles del parque, pasando como parametro el id
     const handleClickDetalle = (park) =>{
-        navigate(`/parque/${id}`)
+        navigate(`/parque/${park.id}`)
     }
 
     //Funcion para modificar los datos del parque, pasando como parametro el id
     const handleClickModificar = (park) =>{
-        navigate(`/modificar/${id}`)
+        navigate(`/modificar/${park.id}`)
     }
 
     //Funcion para eliminar un parque, pasando como parametro el id
     const handleClickEliminar = (park) =>{
-        fetch(`${url}/${id}`,{
+        fetch(`${url}/${park.id}`,{
         method: 'DELETE',
         headers: {
             'Accept': 'application/json',
